@@ -1,0 +1,18 @@
+// Import of partial files
+@import 'config/variables';
+@import 'base/base';
+@import 'theme/theme';
+@import 'layout/layout';
+@import 'animations/animations';
+
+// import components
+@import 'components/navbar';
+@import 'components/waterfall';
+@import 'components/switch';
+@import 'components/header';
+@import 'components/about';
+@import 'components/skills';
+@import 'components/projects';
+@import 'components/contact';
+@import 'components/footer';
+@import 'components/mediaqueries';

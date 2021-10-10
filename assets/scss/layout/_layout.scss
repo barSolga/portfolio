@@ -1,0 +1,28 @@
+/*=============== REUSABLE CSS CLASSES ===============*/
+.section{
+    padding: 4.5rem 0 1rem;
+    
+    &__title, &__title-center{
+        font-size: var(--h2-font-size);
+        color: var(--title-color);
+        text-align: center;
+        margin-bottom: var(--mb-1);
+    }
+}
+
+/*=============== LAYOUT ===============*/
+
+.center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    max-width: 1440px;
+}
+
+.max-container {
+    max-width: 2000px;
+}
+

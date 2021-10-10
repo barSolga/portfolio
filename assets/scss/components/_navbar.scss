@@ -1,0 +1,68 @@
+.nav {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 100;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+    }
+    &__logo {
+        width: 200px;
+    }
+    &__menu {
+        position: absolute;
+        width: 100%;
+        top: -500px;
+        left: 0;
+        gap: 1em;
+        padding: 2em;
+        background-color: var(--nav-bg-color);
+        transition: top .5s;
+        z-index: 101;
+    }
+    &__menu.active {
+        top: 0;
+    }
+    &__item {
+        padding: 1em;
+        text-align: center;
+    }
+    &__link {
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-medium);
+        color: var(--text-color);
+        transition: margin-left .3s, color .3s;
+        &:hover {
+            color: var(--first-color);
+            margin-left: 1em;
+        }
+    }
+    &__toggle {
+        font-size: var(--biggest-font-size);
+        color: var(--text-color);
+        border: none;
+        background: none;
+        padding: 10px;
+        cursor: pointer;
+        transition: color .3s;
+        z-index: 102;
+        &:hover {
+            color: var(--first-color);
+        }
+    }
+}
+
+.nav.navScrolled {
+    position: fixed;
+    background-color: var(--nav-bg-color);
+    animation: showNav .6s linear normal;
+    .nav__box {
+        padding: .5em 2em;
+    }
+}

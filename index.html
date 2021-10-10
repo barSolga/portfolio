@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==== Site Identity ==== -->
+    <link rel="icon" href="assets/img/siteIcon.png">
+    <title>Bartosz Solga | Portfolio</title>
+
+    <!-- ==== Google Fonts Import ==== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- ==== Box Icons ==== -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- ==== AOS CSS ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- ==== External CSS file ==== -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+<body>
+    <div class="center-wrapper">
+        <!-- ==== NAVBAR ==== -->
+        <nav class="nav" id="nav" data-aos="fade-down" data-aos-duration="1000">
+            <div class="nav__box">
+
+                <a href="#">
+                    <img class="nav__logo" src="assets/img/logo.svg" alt="Bartosz Solga">
+                </a>
+
+
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a></li>
+                    <li class="nav__item">
+                        <label class="switch nav__link">
+                            <input type="checkbox" autocomplete="off">
+                            <span class="slider round"></span>
+                        </label>
+                    </li>
+                </ul>
+
+                <button class="nav__toggle">
+                    <i class='toggleIcon bx bxs-grid-alt'></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- ==== HEADER ==== -->
+        <header class="header">
+
+            <div class="header__bgComponent" data-aos="fade-left" data-aos-duration="1500"></div>
+
+            <div class="header__box container">
+
+                <div class="header__leftSide" data-aos="zoom-out" data-aos-duration="2000">
+                    <div class="header__leftSide-item">
+                        <h1 class="header__h1">
+                            Hi, I`am Bartosz
+                        </h1>
+                        <h2 class="header__h2">Frontend Developer</h2>
+                        <p class="header__text">
+                            Designing and creating websites that faithfully serve users is my passion.  
+                        </p>
+                        <button class="header__cta cta-button">
+                            Contact me
+                            <i class='bx bx-send'></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header__rightSide" data-aos="fade-up" data-aos-duration="2000">
+                    <img class="header__rightSide-mobile" src="assets/img/myPic-mobile.png" alt="">
+                    <img class="header__rightSide-desktop" src="assets/img/myPic-desktop.png" alt="">
+                </div>
+            </div>
+
+            <div class="socialIcons">
+                <a class="socialIcons__item socialIcons__item--first" href="" target="_blank">
+                    <i class='bx bxl-github' ></i>
+                </a>
+                <a class="socialIcons__item socialIcons__item--second" href="" target="_blank">
+                    <i class='bx bxs-brain' ></i>
+                </a>
+                <a class="socialIcons__item socialIcons__item--third" href="" target="_blank">
+                    <i class='bx bxl-linkedin-square' ></i>
+                </a>
+            </div>
+
+             <!-- TODO -->
+            <!-- napisać wodospad -->
+
+            <div class="waterfall">
+                <img class="waterfall__one" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
+                <img class="waterfall__two" src="assets/img/bg-waterfall/slash.svg" alt="">
+                <img class="waterfall__three" src="assets/img/bg-waterfall/chevron-left.svg" alt="">
+                <img class="waterfall__four" src="assets/img/bg-waterfall/x.svg" alt="">
+                <img class="waterfall__five" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
+                <img class="waterfall__six" src="assets/img/bg-waterfall/slash.svg" alt="">
+                <img class="waterfall__seven" src="assets/img/bg-waterfall/chevron-blue.svg" alt="">
+                <img class="waterfall__eight" src="assets/img/bg-waterfall/x.svg" alt="">
+                <img class="waterfall__nine" src="assets/img/bg-waterfall/x2.svg" alt="">
+                <img class="waterfall__ten" src="assets/img/bg-waterfall/slash.svg" alt="">
+            </div>
+
+        </header>
+    
+
+    </div>
+    <!-- ==== External JavaScript files ==== -->
+    <!-- AOS JS FILE -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
+
+    <!-- MAIN JS FILE -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

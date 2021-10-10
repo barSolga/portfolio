@@ -1,0 +1,178 @@
+@media screen and (min-width: 576px) {
+}
+
+
+@media screen and (min-width: 830px) {
+    .nav {
+        background: none;
+        &__box {
+            padding: 1em 2em;
+        }
+        &__logo {
+            width: 250px;
+        }
+        &__menu {
+            position: static;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            padding: 0;
+            background: none;
+        }
+        &__toggle {
+            display: none;
+        }
+        &__link {
+            position: relative;
+            transition: .3s;
+            &:hover {
+                margin-left: 0;
+            }
+            &:hover::before{
+                position: absolute;
+                bottom: -10px;
+                left: 50%;
+                transform: translateX(-50%);
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background-color: var(--first-color);
+            }
+        }
+    }
+
+    .switch {
+        transform: scale(.8);
+    }
+
+    .header {
+        &__box {
+            flex-direction: row;
+        }
+        &__leftSide {
+            text-align: left;
+            align-items: center;
+            padding: 0 2em;
+            &-item {
+                align-items: start;
+                text-align: left;
+            }
+        }
+        &__h1 {
+            line-height: 6.5rem;
+            font-size: 4.5rem;
+            font-weight: var(--font-semi-bold);
+        }
+        &__h2 {
+            font-size: 3rem;
+            padding: .02em 0;
+        }
+        &__text {
+            font-size: 2rem;
+            max-width: 30ch;
+            padding: 0 0 2em 0;
+        }
+        &__rightSide, &__leftSide {
+            width: 50vw;
+            height: 100vh;
+        }
+        &__rightSide {
+            &-mobile {
+                display: none;
+            }
+            &-desktop {
+                display: block;
+                position: absolute;
+                transform: translateX(-50%);
+                bottom: 0;
+                left: 50%;
+                max-height: 100%;
+            }
+        }
+        &__bgComponent {
+            border-bottom: 105vh solid var(--bg-component);;
+            border-left: 70vw solid transparent;
+        }
+    }
+
+    .socialIcons {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: row;
+        padding: 2em;
+        &__item {
+            position: relative;
+            font-size: var(--h2-font-size);
+            color: var(--text-color);
+            padding: 0 .5em;
+            transition: .3s;
+            &:hover {
+                color: var(--first-color);
+            }
+            &::after {
+                position: absolute;
+                transform: translate(-50%, -50%);
+                bottom: -50%;
+                left: 50%;
+                font-size: var(--small-font-size);
+
+            }
+            &--first {
+                &:hover::after {
+                    content: "Github";
+                }
+            }
+            &--second {
+                &:hover::after {
+                    content: "CodeWars";
+                }
+            }
+            &--third {
+                &:hover::after {
+                    content: "LinkedIN";
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .nav {
+        &__logo {
+            width: 270px;
+        }
+    }
+
+    .header {
+        &__h1 {
+            font-size: 6rem;
+            font-weight: var(--font-semi-bold);
+        }
+        &__h2 {
+            font-size: 3.6rem;
+        }
+        &__text {
+            font-size: 2.4rem;
+            width: 30ch;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1330px) {
+    .socialIcons {
+        flex-direction: column;
+        &__item {
+            &::after {
+                bottom: 0;
+                right: 0;
+                left: 90%;
+                top: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+/*=============== THEME ===============*/
+/*========== Variables Dark theme ==========*/
+body.theme-dark{
+    --title-color: #fff;
+    --text-color: #fff;
+    --body-color: #2D2D2D;
+    --nav-bg-color: #212121;
+    --bg-component: #212121;
+}
+
+/*========== Buttons ==========*/
+
+.cta-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: linear-gradient(270deg, var(--first-color) -8.16%, var(--first-color-light) 109.69%);
+    border-radius: 8px;
+    padding: 1em 2em;
+    text-transform: uppercase;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    letter-spacing: 1.5px;
+    color: var(--white);
+    cursor: pointer;
+    transition: background .3s, box-shadow .3s;
+    .bx {
+        margin-left: 20px;
+        transform: scale(1.4);
+        font-size: var(--normal-font-size);
+    }
+    &:hover {
+        background: var(--first-color);
+        box-shadow: inset 2px 1px 10px #333333;
+    }
+}
+

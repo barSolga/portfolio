@@ -1,0 +1,74 @@
+.waterfall {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: none;
+    z-index: -2;
+    overflow: hidden;
+  }
+.waterfall img {
+    position: absolute;
+    top: -100%;
+    animation-name: waterfall;
+    animation-duration: 10s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    transform: scale(1.4);
+  }
+.waterfall__one {
+    left: 100px;
+    width: 200px;
+    transform: rotate(-30deg);
+    animation-delay: 1s;
+  }
+.waterfall__two {
+    left: 500px;
+    width: 100px;
+    transform: rotate(-20deg);
+    animation-delay: 2s;
+  }
+.waterfall__three {
+    left: 700px;
+    width: 130px;
+    transform: rotate(-40deg);
+    animation-delay: 3s;
+  }
+.waterfall__four {
+    left: 400px;
+    width: 140px;
+    transform: rotate(50deg);
+    animation-delay: 5s;
+  }
+.waterfall__five {
+    left: 1000px;
+    width: 100px;
+    animation-delay: 7s;
+  }
+.waterfall__six {
+    left: 1300px;
+    width: 60px;
+    animation-delay: 7s;
+  }
+.waterfall__seven {
+    left: 850px;
+    width: 60px;
+    animation-delay: 12s;
+  }
+.waterfall__eight {
+    left: 1600px;
+    width: 60px;
+    animation-delay: 9s;
+  }
+.waterfall__nine {
+    left: 600px;
+    width: 90px;
+    animation-delay: 10s;
+  }
+.waterfall__ten {
+    left: 1000px;
+    width: 90px;
+    animation-delay: 15s;
+  }
