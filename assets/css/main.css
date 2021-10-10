@@ -48,7 +48,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--header-height);
+  scroll-padding-top: 70px;
   font-size: 62.5%;
 }
 
@@ -586,6 +586,8 @@ input:checked + .slider:before {
   height: 0;
   border-bottom: 50vh solid var(--bg-component);
   border-left: 200vw solid transparent;
+  -webkit-filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.5));
   z-index: -1;
 }
 

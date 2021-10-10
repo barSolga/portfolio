@@ -63,8 +63,9 @@
         bottom: 0;
         width: 0;
         height: 0;
-        border-bottom: 50vh solid var(--bg-component);;
+        border-bottom: 50vh solid var(--bg-component);
         border-left: 200vw solid transparent;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.5));
         z-index: -1;
     }
 }
