@@ -6,6 +6,7 @@ body.theme-dark{
     --body-color: #2D2D2D;
     --nav-bg-color: #212121;
     --bg-component: #212121;
+    --higher-section: #181818;
 }
 
 /*========== Buttons ==========*/
@@ -24,15 +25,15 @@ body.theme-dark{
     letter-spacing: 1.5px;
     color: var(--white);
     cursor: pointer;
-    transition: background .3s, box-shadow .3s;
+    transition: .3s;
     .bx {
         margin-left: 20px;
         transform: scale(1.4);
         font-size: var(--normal-font-size);
     }
     &:hover {
-        background: var(--first-color);
-        box-shadow: inset 2px 1px 10px #333333;
+        background: var(--first-color-light);
+        box-shadow: inset 4px 4px 10px rgba(78, 78, 78, 0.377);
     }
 }
 

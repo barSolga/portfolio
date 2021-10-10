@@ -61,7 +61,7 @@
 .nav.navScrolled {
     position: fixed;
     background-color: var(--nav-bg-color);
-    animation: showNav .6s linear normal;
+    animation: showNav 1s linear normal;
     .nav__box {
         padding: .5em 2em;
     }
