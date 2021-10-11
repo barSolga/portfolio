@@ -1,7 +1,6 @@
 .skills {
     position: relative;
     min-height: 100vh;
-
     &__bgComponent {
         position: absolute;
         top: 0;
@@ -10,7 +9,7 @@
         right: 0;
         width: 0;
         height: 0;
-        border-top: 50vh solid var(--first-color);
+        border-top: 300px solid var(--bg-component);
         border-right: 100vw solid transparent;
         filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.5));
         z-index: -1;
@@ -27,5 +26,29 @@
     }
     &__hrColor {
         border-color: var(--white);
+        background-color: var(--white);
+    }
+    &__technologies {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7em;
+        text-align: center;
+        z-index: -1;
+        &-item {
+            padding: 2em;
+            transition: transform .3s;
+            &:hover {
+                transform: scale(1.3);
+            }
+        }
+    }
+    &__text {
+        font-size: var(--h3-font-size);
+        font-weight: var(--font-medium);
     }
 }
