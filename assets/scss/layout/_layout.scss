@@ -1,12 +1,22 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
-    padding: 4.5rem 0 1rem;
+    padding: 4em 1em;
     
-    &__title, &__title-center{
+    &__title {
         font-size: var(--h2-font-size);
         color: var(--title-color);
-        text-align: center;
         margin-bottom: var(--mb-1);
+        font-weight: var(--font-semi-bold);
+    }
+    &__titleSeparator {
+        width: 70px;
+        border: 2px solid var(--first-color);
+        border-radius: 8px;
+        background-color: var(--first-color);
+        margin: 2px 0;
+    }
+    &__titleSecond {
+        font-weight: var(--font-normal);
     }
 }
 

@@ -13,59 +13,59 @@
     position: absolute;
     top: -100%;
     animation-name: waterfall;
-    animation-duration: 10s;
-    animation-timing-function: ease-in;
+    animation-duration: 12s;
+    animation-timing-function: linear;
     animation-iteration-count: infinite;
-    transform: scale(1.4);
+    transform: scale(1.5);
   }
 .waterfall__one {
     left: 100px;
-    width: 200px;
+    width: 250px;
     transform: rotate(-30deg);
-    animation-delay: 1s;
+    animation-delay: .3s;
   }
 .waterfall__two {
     left: 500px;
-    width: 100px;
+    width: 150px;
     transform: rotate(-20deg);
-    animation-delay: 2s;
+    animation-delay: 2.5s;
   }
 .waterfall__three {
-    left: 700px;
-    width: 130px;
+    left: 730px;
+    width: 180px;
     transform: rotate(-40deg);
-    animation-delay: 3s;
+    animation-delay: 4s;
   }
 .waterfall__four {
     left: 400px;
-    width: 140px;
+    width: 160px;
     transform: rotate(50deg);
     animation-delay: 5s;
   }
 .waterfall__five {
     left: 1000px;
-    width: 100px;
+    width: 200px;
     animation-delay: 7s;
   }
 .waterfall__six {
     left: 1300px;
-    width: 60px;
+    width: 160px;
     animation-delay: 7s;
   }
 .waterfall__seven {
     left: 850px;
-    width: 60px;
+    width: 120px;
     animation-delay: 12s;
   }
 .waterfall__eight {
     left: 1600px;
-    width: 60px;
+    width: 140px;
     animation-delay: 9s;
   }
 .waterfall__nine {
     left: 600px;
-    width: 90px;
-    animation-delay: 10s;
+    width: 200px;
+    animation-delay: 8s;
   }
 .waterfall__ten {
     left: 1000px;

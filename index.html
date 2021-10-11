@@ -12,7 +12,7 @@
     <!-- ==== Google Fonts Import ==== -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
     <!-- ==== Box Icons ==== -->
     <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
@@ -74,10 +74,12 @@
                         <p class="header__text">
                             Designing and creating websites that faithfully serve users is my passion.  
                         </p>
-                        <button class="header__cta cta-button">
-                            Contact me
-                            <i class='bx bx-send'></i>
-                        </button>
+                        <a href="#contact">
+                            <button class="header__cta cta-button">
+                                Contact me
+                                <i class='bx bx-send'></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
 
@@ -106,16 +108,64 @@
                 <img class="waterfall__four" src="assets/img/bg-waterfall/x.svg" alt="">
                 <img class="waterfall__five" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
                 <img class="waterfall__six" src="assets/img/bg-waterfall/slash.svg" alt="">
-                <img class="waterfall__seven" src="assets/img/bg-waterfall/chevron-blue.svg" alt="">
+                <img class="waterfall__seven" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
                 <img class="waterfall__eight" src="assets/img/bg-waterfall/x.svg" alt="">
-                <img class="waterfall__nine" src="assets/img/bg-waterfall/x2.svg" alt="">
+                <img class="waterfall__nine" src="assets/img/bg-waterfall/x.svg" alt="">
                 <img class="waterfall__ten" src="assets/img/bg-waterfall/slash.svg" alt="">
             </div>
 
         </header>
     
         <main class="main">
-            <section class="about section" id="about"></section>
+            <section class="about section" id="about">
+
+                <div class="about__layout container">
+
+                    <div class="about__leftSide">
+                        <div class="about__leftSide-component"></div>
+                        <img class="about__leftSide-desktop" src="assets/img/aboutPic-desktop 1.png" alt="typing on macbook">
+                        <img class="about__leftSide-mobile" src="assets/img/aboutPic-desktop 1.png" alt="typing on macbook">
+                    </div>
+
+                    <br>
+
+                    <div class="about__rightSide">
+                        <div class="about__text">
+                            <h2 class="section__title">About</h2>
+                            <hr class="section__titleSeparator">
+                            <h3 class="section__titleSecond">Introduction</h3>
+                            <br>
+                            <p class="about__text-content">
+                                I am a 2nd-year student of Applied Computer Science interested in designing and creating user interfaces. 
+                                <br><br>
+                                My career goal is to become a full-stack web developer.
+                            </p>
+                            <br>
+                            <a href="#">
+                                <button class="cta-button">
+                                    Read More <i class='bx bx-right-arrow-alt'></i>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="skills section" id="skills">
+                <div class="skills__bgComponent" data-aos="fade-down" data-aos-duration="1000">
+                </div>
+
+                <div class="skills__componentTitle" data-aos="fade-down" data-aos-duration="1000">
+                    <h2 class="section__title skills__titleColor">About</h2>
+                    <hr class="section__titleSeparator skills__hrColor">
+                    <h3 class="section__titleSecond skills__titleColor">Introduction</h3>
+                </div>
+
+
+
+
+            </section>
         </main>
 
     </div>

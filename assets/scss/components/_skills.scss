@@ -1,0 +1,31 @@
+.skills {
+    position: relative;
+    min-height: 100vh;
+
+    &__bgComponent {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 0;
+        height: 0;
+        border-top: 50vh solid var(--first-color);
+        border-right: 100vw solid transparent;
+        filter: drop-shadow(4px 4px 40px rgba(0, 0, 0, 0.5));
+        z-index: -1;
+    }
+    &__componentTitle {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 2em;
+        color: var(--white);
+    }
+    &__titleColor {
+        color: var(--white);
+    }
+    &__hrColor {
+        border-color: var(--white);
+    }
+}

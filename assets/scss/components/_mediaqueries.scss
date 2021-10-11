@@ -152,6 +152,27 @@
             }
         }
     }
+
+    .about {
+        &__layout {
+            flex-direction: row;
+        }
+        &__leftSide, &__rightSide {
+            height: 100%;
+            width: 50vw;
+        }
+        &__leftSide {
+            position: relative;
+            &-desktop {
+                display: block;
+                box-shadow: -4px -4px 10px rgba(0, 0, 0, 0.25);
+            }
+            &-mobile {
+                display: none;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 998px) {
@@ -186,6 +207,22 @@
                 right: 0;
                 left: 90%;
                 top: 50%;
+            }
+        }
+    }
+    .about {
+        &__leftSide {
+            &-component {
+                padding: 1em 2em;
+                position: absolute;
+                top: -10%;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                display: block;
+                max-width: 584px;
+                max-height: 390px;
+                background-color: var(--first-color);
             }
         }
     }
