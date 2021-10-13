@@ -4,6 +4,13 @@
             top: 10vh;
         }
     }
+    .projects {
+        &__elem {
+            &-item {
+                margin: 2em;
+            }
+        }
+    }
 }
 
 @media screen and (max-height: 550px) {

@@ -1,0 +1,16 @@
+{
+    "project": [
+        {
+            "name": "portfolio",
+            "live": "https://barsolga.github.io/portfolio/",
+            "github": "https://github.com/barSolga/portfolio",
+            "image": "assets/img/projects-pic/protfolio-prct.png"
+        },
+        {
+            "name": "pro-paper",
+            "live": "https://barsolga.github.io/PRO-PAPER_website/",
+            "github": "https://github.com/barSolga/PRO-PAPER_website",
+            "image": "assets/img/projects-pic/propaper-prct.png"
+        }
+    ]
+}
