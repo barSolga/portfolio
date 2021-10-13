@@ -36,3 +36,14 @@
     max-width: 2000px;
 }
 
+.higher-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 70vh;
+    background-color: var(--higher-section);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+    padding: 4em 2em;
+}

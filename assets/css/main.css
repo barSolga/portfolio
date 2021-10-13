@@ -196,6 +196,25 @@ body.theme-dark {
   max-width: 2000px;
 }
 
+.higher-section {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  min-height: 70vh;
+  background-color: var(--higher-section);
+  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
+  padding: 4em 2em;
+}
+
 @-webkit-keyframes showNav {
   from {
     top: -100%;
@@ -589,10 +608,7 @@ input:checked + .slider:before {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  max-height: 100%;
+  height: 100%;
 }
 
 .header__rightSide-desktop {
@@ -614,24 +630,6 @@ input:checked + .slider:before {
 
 .socialIcons {
   display: none;
-}
-
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100vw;
-  min-height: 70vh;
-  background-color: var(--higher-section);
-  -webkit-box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.4);
-  padding: 4em 2em;
 }
 
 .about__layout {
@@ -680,16 +678,23 @@ input:checked + .slider:before {
   position: relative;
 }
 
+.about__text {
+  max-width: 100%;
+}
+
 .about__text-content {
   max-width: 50ch;
 }
 
 .skills {
+  width: 100vw;
+  min-height: 70vh;
   position: relative;
-  min-height: 100vh;
+  padding: 3em 2em;
 }
 
 .skills__bgComponent {
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -704,28 +709,7 @@ input:checked + .slider:before {
   z-index: -1;
 }
 
-.skills__componentTitle {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: 2em;
-  color: var(--white);
-}
-
-.skills__titleColor {
-  color: var(--white);
-}
-
-.skills__hrColor {
-  border-color: var(--white);
-  background-color: var(--white);
-}
-
 .skills__technologies {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -739,9 +723,9 @@ input:checked + .slider:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 7em;
+  padding-top: 1em;
   text-align: center;
-  z-index: -1;
+  z-index: 0;
 }
 
 .skills__technologies-item {
@@ -762,14 +746,7 @@ input:checked + .slider:before {
   font-weight: var(--font-medium);
 }
 
-@media screen and (min-width: 576px) {
-  .skills__bgComponent {
-    border-top: 50vh solid var(--bg-component);
-    border-right: 60vw solid transparent;
-  }
-  .skills__componentTitle {
-    margin: 5em;
-  }
+@media screen and (min-width: 568px) {
   .skills__technologies {
     top: 10vh;
   }
@@ -963,8 +940,38 @@ input:checked + .slider:before {
   .about__leftSide-mobile {
     display: none;
   }
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skills__componentTitle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: var(--white);
+  }
+  .skills__titleColor {
+    color: var(--white);
+  }
+  .skills__hrColor {
+    border-color: var(--white);
+    background-color: var(--white);
+  }
   .skills__bgComponent {
+    display: block;
     border-right: 40vw solid transparent;
+    border-top: 60vh solid var(--bg-component);
   }
   .skills__componentTitle {
     margin: 3em 5em;
@@ -983,8 +990,6 @@ input:checked + .slider:before {
         -ms-flex-align: center;
             align-items: center;
     max-width: 50%;
-    left: 60%;
-    margin-top: 0;
     padding: 2em;
   }
 }
@@ -1038,7 +1043,8 @@ input:checked + .slider:before {
 
 @media screen and (min-width: 2000px) {
   .skills__bgComponent {
-    border-right: 20vw solid transparent;
+    border-right: 30vw solid transparent;
+    border-top: 60vh solid var(--bg-component);
   }
 }
 /*# sourceMappingURL=main.css.map */

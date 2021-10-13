@@ -1,12 +1,5 @@
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 568px) {
     .skills {
-        &__bgComponent {
-            border-top: 50vh solid var(--bg-component);
-            border-right: 60vw solid transparent;
-            }
-        &__componentTitle {
-            margin: 5em;
-        }
         &__technologies {
             top: 10vh;
         }
@@ -186,9 +179,28 @@
     }
 
     .skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__componentTitle {
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: var(--white);
+        }
+        &__titleColor {
+            color: var(--white);
+        }
+        &__hrColor {
+            border-color: var(--white);
+            background-color: var(--white);
+        }
         &__bgComponent {
+            display: block;
             border-right: 40vw solid transparent;
-            }
+            border-top: 60vh solid var(--bg-component);
+        }
         &__componentTitle {
             margin: 3em 5em;
         }
@@ -198,8 +210,6 @@
             justify-content: space-evenly;
             align-items: center;
             max-width: 50%;
-            left: 60%;
-            margin-top: 0; 
             padding: 2em;
         }
     }
@@ -268,7 +278,8 @@
 @media screen and (min-width: 2000px) {
     .skills {
         &__bgComponent {
-            border-right: 20vw solid transparent;
+            border-right: 30vw solid transparent;
+            border-top: 60vh solid var(--bg-component);
         }
     }
 }
