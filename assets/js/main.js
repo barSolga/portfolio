@@ -11,7 +11,6 @@ const websiteLogo = document.querySelector('.nav__logo');
 const navLinks = document.querySelectorAll('.nav__link');
 const projectBox = document.querySelector('.projects__elem');
 
-
 // set default website theme
 localStorage.setItem('theme', 'theme-light')
 
@@ -43,8 +42,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
-
-
 // Loading projects data on page
 fetch(`${siteURL}/assets/data/projects.json`)
     .then(response => response.json())
@@ -64,19 +61,15 @@ fetch(`${siteURL}/assets/data/projects.json`)
             wrapper.appendChild(project)
         }
 
-    })
+    }) .catch(() => {
+        const warning = document.querySelector('.projects__warning')
+        const imgWarning = document.querySelector('.projects__warningIMG');
 
-    // TODO write catch for api
-    // .catch(() => {
-        
+        warning.innerHTML = 'Error while loading projects has occured!<br><span>All projects can be found on my Github account <a href="https://github.com/barSolga" target="_blank">Go to Github<i class="bx bx-right-arrow-alt"></a></span>';
+        imgWarning.style.display = 'block';
+});
 
-    //     warning.innerHTML = 'Wystąpił problem z załadowaniem produktów na naszej stronie!<br><span>Skontaktuj się z nami w celu otrzymania katalogu.</span>';
-    //     imgWarning.style.display = 'block';
-    // });
-    // 
-
-
-
+    
 navLinks.forEach(item => {
     item.addEventListener('click', () => {
         navMenu.classList.remove('active');

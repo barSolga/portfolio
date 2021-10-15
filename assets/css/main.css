@@ -55,7 +55,6 @@ html {
 
 body {
   position: relative;
-  min-height: 500vh;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
@@ -756,6 +755,47 @@ input:checked + .slider:before {
   font-weight: var(--font-medium);
 }
 
+.projects__warningIMG {
+  display: none;
+  max-width: 100%;
+  padding: 2em;
+}
+
+.projects__warning span {
+  padding: 1em 0;
+  font-weight: bold;
+}
+
+.projects__warning span a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 0;
+  color: var(--text-color);
+}
+
+.projects__warning span a .bx {
+  margin-left: 10px;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.projects__warning span a:hover {
+  color: var(--first-color-light);
+}
+
+.projects__warning span a:hover .bx {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
 .projects__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -800,11 +840,6 @@ input:checked + .slider:before {
   transition: box-shadow .3s, -webkit-box-shadow .3s;
 }
 
-.projects__elem-item:hover {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-
 .projects__elem-links {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -827,8 +862,16 @@ input:checked + .slider:before {
 }
 
 .projects__elem-link1, .projects__elem-link2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1em;
   margin: .5em;
+  -webkit-transition: color .3s;
+  transition: color .3s;
 }
 
 .projects__elem-link1 .bx, .projects__elem-link2 .bx {
@@ -841,14 +884,29 @@ input:checked + .slider:before {
           transform: scale(1.4);
 }
 
+.projects__elem-link1:hover, .projects__elem-link2:hover {
+  color: #000;
+}
+
 .projects__elem-link1:hover .bx, .projects__elem-link2:hover .bx {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
+.contact {
+  width: 100vw;
+  height: 100vh;
+}
+
 @media screen and (min-width: 568px) {
   .skills__technologies {
     top: 10vh;
+  }
+  .projects__warningIMG {
+    max-width: 30em;
+  }
+  .projects__warning span {
+    font-weight: bold;
   }
   .projects__elem-item {
     margin: 2em;

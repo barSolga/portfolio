@@ -5,6 +5,14 @@
         }
     }
     .projects {
+        &__warningIMG {
+            max-width: 30em;
+        }
+        &__warning {
+            span {
+                font-weight: bold;
+            }
+        }
         &__elem {
             &-item {
                 margin: 2em;

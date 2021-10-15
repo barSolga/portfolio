@@ -1,4 +1,32 @@
 .projects {
+    &__warningIMG {
+        display: none;
+        max-width: 100%;
+        padding: 2em;
+    }
+    &__warning {
+        span {
+            padding: 1em 0;
+            font-weight: bold;
+            a {
+                display: flex;
+                align-items: center;
+                padding: 2em 0;
+                color: var(--text-color);
+                .bx {
+                    margin-left: 10px;
+                    transition: transform .3s;
+                    transform: scale(1.4);
+                }
+                &:hover {
+                    color: var(--first-color-light);
+                    .bx {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
     &__title {
         display: flex;
         justify-content: center;
@@ -23,9 +51,6 @@
             text-align: center;
             overflow: hidden;
             transition: box-shadow .3s;
-            &:hover {
-                box-shadow: none;
-            }
         }
         &-links {
             display: flex;
@@ -40,14 +65,18 @@
             padding: .5em 1em;
         }
         &-link1, &-link2 {
+            display: flex;
+            align-items: center;
             padding: 1em;
             margin: .5em;
+            transition: color .3s;
             .bx {
                 margin-left: 10px;
                 transition: transform .3s;
                 transform: scale(1.4);
             }
             &:hover {
+                color: #000;
                 .bx {
                     transform: rotate(180deg);
                 }
