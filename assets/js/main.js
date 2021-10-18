@@ -11,6 +11,8 @@ const websiteLogo = document.querySelector('.nav__logo');
 const navLinks = document.querySelectorAll('.nav__link');
 const projectBox = document.querySelector('.projects__elem');
 const thanksPage = document.querySelector('.thanksPage');
+const switchImg = document.querySelector('.slider-ico');
+const footerYear = document.querySelector('.footer__year');
 
 // set default website theme
 localStorage.setItem('theme', 'theme-light')
@@ -74,6 +76,11 @@ fetch(`${siteURL}/assets/data/projects.json`)
         imgWarning.style.display = 'block';
 });
 
+const changeFooterYear = () => {
+    footerYear.innerHTML = new Date().getFullYear();
+}
+
+changeFooterYear();
 setThanksPageLink();
     
 navLinks.forEach(item => {
@@ -88,9 +95,13 @@ navLinks.forEach(item => {
 themeButton.addEventListener('change', () => {
     if(localStorage.getItem('theme') === 'theme-dark') {
         setTheme('theme-light');
-        websiteLogo.setAttribute('src', 'assets/img/logo.svg')
+        websiteLogo.setAttribute('src', 'assets/img/logo.svg');
+        switchImg.style.transform = 'translateX(0)';
+        switchImg.setAttribute('src', 'assets/img/sun.png');
     } else {
         setTheme('theme-dark');
-        websiteLogo.setAttribute('src', 'assets/img/logo-dark.svg')
+        websiteLogo.setAttribute('src', 'assets/img/logo-dark.svg');
+        switchImg.style.transform = 'translateX(26px)';
+        switchImg.setAttribute('src', 'assets/img/moon.png');
     }
   });

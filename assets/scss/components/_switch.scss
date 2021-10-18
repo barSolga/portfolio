@@ -4,6 +4,16 @@
     display: inline-block;
     width: 60px;
     height: 34px;
+    .slider-ico{
+      position: absolute;
+      left: 9px;
+      bottom: 10px;
+      width: 15px;
+      height: 15px;
+      transition: transform .4s;
+      pointer-events: none;
+      user-select: none;
+    } 
   }
   
   /* Hide default HTML checkbox */
@@ -43,6 +53,7 @@
 
   input:checked + .slider:before {
     transform: translateX(26px);
+    background-color: var(--bg-component);
   }
   
   /* Rounded sliders */
