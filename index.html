@@ -245,38 +245,45 @@
 
             </section>
 
-            <section class="contact" id="contact">
+            <section class="contact section" id="contact">
+                <!-- <img src="assets/img/contactPic.svg" alt="" class="contact__image"> -->
 
                 <div class="contact__title">
-                    <h2 class="section__title">About</h2>
+                    <h2 class="section__title">Contact</h2>
                     <hr class="section__titleSeparator">
-                    <h3 class="section__titleSecond">Introduction</h3>
+                    <h3 class="section__titleSecond">Get in touch</h3>
                 </div>
 
-                <form action="" method="post" enctype="text/plain" class="contact__form">
-                    <input type="text" name="name" placeholder="Your name...">
+
+                <form action="https://formsubmit.co/bartek016790@gmail.com" method="POST" class="contact__form">
+                    <input class="thanksPage" type="hidden" name="_next" value="">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input class="contact__input" type="text" name="name" placeholder="Your name" required>
                     <br>
                     <br>
-                    <input type="text" name="mail" placeholder="Your email...">
+                    <input class="contact__input" type="email" name="email" placeholder="Your email" required>
                     <br>
                     <br>
-                    <input type="text" name="subject" placeholder="Subject...">
+                    <input class="contact__input" type="text" name="subject" placeholder="Subject" required>
                     <br>
                     <br>
-                    <textarea type="text" name="message" size="50" placeholder="Message..."></textarea>
+                    <textarea class="contact__input contact__input-mess" type="text" name="message" size="50" placeholder="Message..." required></textarea>
                     <br>
                     <br>
-                    <input type="submit" value="Send" class="cta-btn">
+                    <input type="submit" value="Send" class="cta-button">
                 </form>
 
             </section>
         </main>
 
         <footer class="footer">
-
+            <p class="footer__textOne">Designed and created by Bartosz Solga</p>
+            <p class="footer__textTwo">Copyright © <span class="footer__year"></span></p>
         </footer>
 
     </div>
+
+
     <!-- ==== External JavaScript files ==== -->
 
     <!-- AOS JS FILE -->

@@ -1,4 +1,32 @@
 .contact {
-    width: 100vw;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // &__image {
+    //     align-self: center;
+    //     margin-top: -2em;
+    //     margin-bottom: 3em;
+    // }
+    &__title {
+        padding: 2em 0;
+    }
+    &__input {
+        width: 100%;
+        padding: 1em 1.5em;
+        margin-bottom: 1em;
+        font-family: var(--body-font);
+        font-size: var(--small-font-size);
+        border-radius: 8px;
+        border: none;
+        &:focus {
+            outline: 2px solid var(--first-color);
+            box-shadow: 0 0 7px var(--first-color);
+        }
+        &-mess {
+            max-width: 100%;
+            min-width: 100%;
+            min-height: 150px;
+            max-height: 300px;
+        }
+    }
 }

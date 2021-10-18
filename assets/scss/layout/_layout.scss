@@ -1,6 +1,6 @@
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section{
-    padding: 4em 1em;
+    padding: 4em 2em;
     
     &__title {
         font-size: var(--h2-font-size);
@@ -18,6 +18,13 @@
     &__titleSecond {
         font-weight: var(--font-normal);
     }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /*=============== LAYOUT ===============*/

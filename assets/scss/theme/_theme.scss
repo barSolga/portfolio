@@ -7,6 +7,7 @@ body.theme-dark{
     --nav-bg-color: #212121;
     --bg-component: #212121;
     --higher-section: #181818;
+    --footer: #181818;
 }
 
 /*========== Buttons ==========*/
@@ -39,6 +40,10 @@ body.theme-dark{
         .bx {
             transform: rotate(180deg);            
         }
+    }
+    &:focus {
+        outline: 2px solid var(--first-color);
+        box-shadow: 0 0 7px var(--first-color);
     }
 }
 

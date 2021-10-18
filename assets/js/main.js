@@ -10,6 +10,7 @@ const themeButton = document.querySelector('.switch');
 const websiteLogo = document.querySelector('.nav__logo');
 const navLinks = document.querySelectorAll('.nav__link');
 const projectBox = document.querySelector('.projects__elem');
+const thanksPage = document.querySelector('.thanksPage');
 
 // set default website theme
 localStorage.setItem('theme', 'theme-light')
@@ -17,6 +18,10 @@ localStorage.setItem('theme', 'theme-light')
 // Get page url
 const url = window.location.toString();
 const siteURL = url.substring(0, url.lastIndexOf("/"));
+
+const setThanksPageLink = () => {
+    thanksPage.setAttribute('value', `${siteURL}/thanks.html`)
+}
 
 // toggle menu function 
 const showMenu = () => {
@@ -69,6 +74,7 @@ fetch(`${siteURL}/assets/data/projects.json`)
         imgWarning.style.display = 'block';
 });
 
+setThanksPageLink();
     
 navLinks.forEach(item => {
     item.addEventListener('click', () => {
