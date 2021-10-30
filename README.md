@@ -3,9 +3,9 @@
 *Designed and created by Bartosz Solga*
 # Personal Portfolio website
 
-> I have created this project from scratch using all the knowledge i gained through my journey with front-end,
-> Projects data is beeing fetched form .json file which will automate adding new projects in future,
-> Portfolio is beeing updated all the time,
+> I have created this project from scratch using all the knowledge i gained through my journey with front-end.
+> Projects data is beeing fetched form .json file which will automate adding new projects in future.
+> Portfolio is beeing updated all the time.
 
 ## Used assets:
 * [Icons] (https://boxicons.com/)
