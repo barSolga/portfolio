@@ -62,6 +62,7 @@
     position: fixed;
     background-color: var(--nav-bg-color);
     animation: showNav 1s linear normal;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.274);
     .nav__box {
         padding: .5em 2em;
     }

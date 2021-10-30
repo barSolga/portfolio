@@ -1,0 +1,15 @@
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    &__btn {
+        margin-top: 1em;
+    }
+    &__img {
+        max-width: 300px;
+        margin-bottom: 1em;
+    }
+}

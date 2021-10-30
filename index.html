@@ -1,290 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ==== Site Identity ==== -->
-    <link rel="icon" href="assets/img/siteIcon.png">
+    <link rel="icon" href="assets/img/siteIcon.png" />
     <title>Bartosz Solga | Portfolio</title>
 
     <!-- ==== Google Fonts Import ==== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- ==== Box Icons ==== -->
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <!-- ==== AOS CSS ==== -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- ==== External CSS file ==== -->
-    <link rel="stylesheet" href="assets/css/main.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
     <div class="center-wrapper">
-        <!-- ==== NAVBAR ==== -->
-        <nav class="nav" id="nav" data-aos="fade-down" data-aos-duration="1000">
-            <div class="nav__box">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="nav" id="nav" data-aos="fade-down" data-aos-duration="1000">
+        <div class="nav__box">
+          <a href="#">
+            <img
+              class="nav__logo"
+              src="assets/img/logo.svg"
+              alt="Bartosz Solga"
+            />
+          </a>
 
-                <a href="#">
-                    <img class="nav__logo" src="assets/img/logo.svg" alt="Bartosz Solga">
-                </a>
+          <ul class="nav__menu">
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <label class="switch nav__link">
+                <input type="checkbox" autocomplete="off" />
+                <span class="slider round">
+                  <img class="slider-ico" src="assets/img/sun.png" />
+                </span>
+              </label>
+            </li>
+          </ul>
 
+          <button class="nav__toggle">
+            <i class="toggleIcon bx bxs-grid-alt"></i>
+          </button>
+        </div>
+      </nav>
 
-                <ul class="nav__menu">
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link">About</a></li>
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projects</a></li>
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link">Contact</a></li>
-                    <li class="nav__item">
-                        <label class="switch nav__link">
-                            <input type="checkbox" autocomplete="off">
-                            <span class="slider round">
-                                <img class="slider-ico" src="assets/img/sun.png">
-                            </span>
-                        </label>
-                    </li>
-                </ul>
+      <!-- ==== HEADER ==== -->
+      <header class="header">
+        <div
+          class="header__bgComponent"
+          data-aos="fade-left"
+          data-aos-duration="2500"
+        ></div>
 
-                <button class="nav__toggle">
-                    <i class='toggleIcon bx bxs-grid-alt'></i>
+        <div class="header__box container">
+          <div
+            class="header__leftSide"
+            data-aos="zoom-out"
+            data-aos-duration="2000"
+          >
+            <div class="header__leftSide-item">
+              <h1 class="header__h1">Hi, I am Bartosz</h1>
+              <h2 class="header__h2">Frontend Developer</h2>
+              <p class="header__text">
+                Designing and creating websites that faithfully serve users is
+                my passion.
+              </p>
+              <a href="#contact">
+                <button class="header__cta cta-button">
+                  Contact me
+                  <i class="bx bx-send"></i>
                 </button>
+              </a>
             </div>
-        </nav>
+          </div>
 
-        <!-- ==== HEADER ==== -->
-        <header class="header">
+          <div
+            class="header__rightSide"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
+            <img
+              class="header__rightSide-mobile"
+              src="assets/img/myPic-mobile.png"
+              alt=""
+            />
+            <img
+              class="header__rightSide-desktop"
+              src="assets/img/myPic-desktop.png"
+              alt=""
+            />
+          </div>
+        </div>
 
-            <div class="header__bgComponent" data-aos="fade-left" data-aos-duration="2500"></div>
+        <div class="socialIcons">
+          <a
+            class="socialIcons__item socialIcons__item--first"
+            href="https://github.com/barSolga"
+            target="_blank"
+          >
+            <i class="bx bxl-github"></i>
+          </a>
+          <a
+            class="socialIcons__item socialIcons__item--second"
+            href="https://www.codewars.com/users/barSolga"
+            target="_blank"
+          >
+            <i class="bx bxs-brain"></i>
+          </a>
+          <a
+            class="socialIcons__item socialIcons__item--third"
+            href="https://www.linkedin.com/in/bartosz-so%C5%82ga-9367a9197/"
+            target="_blank"
+          >
+            <i class="bx bxl-linkedin-square"></i>
+          </a>
+        </div>
 
-            <div class="header__box container">
+        <div class="waterfall">
+          <img
+            class="waterfall__one"
+            src="assets/img/bg-waterfall/chevron-right.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__two"
+            src="assets/img/bg-waterfall/slash.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__three"
+            src="assets/img/bg-waterfall/chevron-left.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__four"
+            src="assets/img/bg-waterfall/x.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__five"
+            src="assets/img/bg-waterfall/chevron-right.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__six"
+            src="assets/img/bg-waterfall/slash.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__seven"
+            src="assets/img/bg-waterfall/chevron-right.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__eight"
+            src="assets/img/bg-waterfall/x.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__nine"
+            src="assets/img/bg-waterfall/x.svg"
+            alt=""
+          />
+          <img
+            class="waterfall__ten"
+            src="assets/img/bg-waterfall/slash.svg"
+            alt=""
+          />
+        </div>
+      </header>
 
-                <div class="header__leftSide" data-aos="zoom-out" data-aos-duration="2000">
-                    <div class="header__leftSide-item">
-                        <h1 class="header__h1">
-                            Hi, I am Bartosz
-                        </h1>
-                        <h2 class="header__h2">Frontend Developer</h2>
-                        <p class="header__text">
-                            Designing and creating websites that faithfully serve users is my passion.  
-                        </p>
-                        <a href="#contact">
-                            <button class="header__cta cta-button">
-                                Contact me
-                                <i class='bx bx-send'></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="header__rightSide" data-aos="fade-up" data-aos-duration="2000">
-                    <img class="header__rightSide-mobile" src="assets/img/myPic-mobile.png" alt="">
-                    <img class="header__rightSide-desktop" src="assets/img/myPic-desktop.png" alt="">
-                </div>
+      <main class="main">
+        <section
+          class="about section higher-section"
+          id="about"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="about__layout container">
+            <div class="about__leftSide">
+              <div class="about__leftSide-component"></div>
+              <img
+                class="about__leftSide-desktop"
+                src="assets/img/aboutPic-desktop 1.png"
+                alt="typing on macbook"
+              />
+              <img
+                class="about__leftSide-mobile"
+                src="assets/img/aboutPic-desktop 1.png"
+                alt="typing on macbook"
+              />
             </div>
 
-            <div class="socialIcons">
-                <a class="socialIcons__item socialIcons__item--first" href="https://github.com/barSolga" target="_blank">
-                    <i class='bx bxl-github' ></i>
+            <br />
+
+            <div class="about__rightSide">
+              <div class="about__text">
+                <h2 class="section__title">About</h2>
+                <hr class="section__titleSeparator" />
+                <h3 class="section__titleSecond">Introduction</h3>
+                <br />
+                <p class="about__text-content">
+                  I am a 2nd-year student of Applied Computer Science interested
+                  in designing and creating user interfaces.
+                  <br /><br />
+                  My career goal is to become a full-stack web developer.
+                </p>
+                <br />
+                <a href="#">
+                  <button class="cta-button">
+                    Read More <i class="bx bx-right-arrow-alt"></i>
+                  </button>
                 </a>
-                <a class="socialIcons__item socialIcons__item--second" href="https://www.codewars.com/users/barSolga" target="_blank">
-                    <i class='bx bxs-brain' ></i>
-                </a>
-                <a class="socialIcons__item socialIcons__item--third" href="https://www.linkedin.com/in/bartosz-so%C5%82ga-9367a9197/" target="_blank">
-                    <i class='bx bxl-linkedin-square' ></i>
-                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills section" id="skills">
+          <div
+            class="skills__bgComponent"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          ></div>
+
+          <div
+            class="skills__componentTitle container"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h2 class="section__title skills__titleColor">Skills</h2>
+            <hr class="section__titleSeparator skills__hrColor" />
+            <h3 class="section__titleSecond skills__titleColor">Tehnologies</h3>
+          </div>
+
+          <div
+            class="skills__technologies"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/html5.svg" alt="" />
+              <p class="skills__text">HTML5</p>
             </div>
 
-            <div class="waterfall">
-                <img class="waterfall__one" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
-                <img class="waterfall__two" src="assets/img/bg-waterfall/slash.svg" alt="">
-                <img class="waterfall__three" src="assets/img/bg-waterfall/chevron-left.svg" alt="">
-                <img class="waterfall__four" src="assets/img/bg-waterfall/x.svg" alt="">
-                <img class="waterfall__five" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
-                <img class="waterfall__six" src="assets/img/bg-waterfall/slash.svg" alt="">
-                <img class="waterfall__seven" src="assets/img/bg-waterfall/chevron-right.svg" alt="">
-                <img class="waterfall__eight" src="assets/img/bg-waterfall/x.svg" alt="">
-                <img class="waterfall__nine" src="assets/img/bg-waterfall/x.svg" alt="">
-                <img class="waterfall__ten" src="assets/img/bg-waterfall/slash.svg" alt="">
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/css3.svg" alt="" />
+              <p class="skills__text">CSS3</p>
             </div>
 
-        </header>
-    
-        <main class="main">
-            <section class="about section higher-section" id="about" data-aos="fade-up" data-aos-duration="1000">
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/javascript.svg" alt="" />
+              <p class="skills__text">JavaScript</p>
+            </div>
 
-                <div class="about__layout container">
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/bootstrap.svg" alt="" />
+              <p class="skills__text">Bootstrap</p>
+            </div>
 
-                    <div class="about__leftSide">
-                        <div class="about__leftSide-component"></div>
-                        <img class="about__leftSide-desktop" src="assets/img/aboutPic-desktop 1.png" alt="typing on macbook">
-                        <img class="about__leftSide-mobile" src="assets/img/aboutPic-desktop 1.png" alt="typing on macbook">
-                    </div>
-                    
-                    <br>
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/sass.svg" alt="" />
+              <p class="skills__text">Sass/Scss</p>
+            </div>
 
-                    <div class="about__rightSide">
-                        <div class="about__text">
-                            <h2 class="section__title">About</h2>
-                            <hr class="section__titleSeparator">
-                            <h3 class="section__titleSecond">Introduction</h3>
-                            <br>
-                            <p class="about__text-content">
-                                I am a 2nd-year student of Applied Computer Science interested in designing and creating user interfaces. 
-                                <br><br>
-                                My career goal is to become a full-stack web developer.
-                            </p>
-                            <br>
-                            <a href="#">
-                                <button class="cta-button">
-                                    Read More <i class='bx bx-right-arrow-alt'></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/git.svg" alt="" />
+              <p class="skills__text">Git / Github</p>
+            </div>
+
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/vscode.svg" alt="" />
+              <p class="skills__text">VScode</p>
+            </div>
+
+            <div class="skills__technologies-item">
+              <img src="assets/img/technologiesIcons/figma.svg" alt="" />
+              <p class="skills__text">Figma</p>
+            </div>
+          </div>
+        </section>
+
+        <section
+          class="projects section higher-section"
+          id="projects"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          <div class="projects__title">
+            <h2 class="section__title">Projects</h2>
+            <hr class="section__titleSeparator" />
+            <h3 class="section__titleSecond">My work</h3>
+          </div>
+
+          <div class="projects__box">
+            <img
+              src="assets/img/warningPic.svg"
+              alt="WARNING!"
+              class="projects__warningIMG"
+            />
+            <p class="projects__warning"></p>
+
+            <template class="projects__elem">
+              <div class="projects__elem-item" id="projects">
+                <img
+                  class="projects__elem-image"
+                  src="assets/img/projects-pic/protfolio-prct.png"
+                  alt=""
+                />
+                <h3 class="projects__elem-title"></h3>
+                <div class="projects__elem-links">
+                  <a href="" class="projects__elem-link1" target="_blank">
+                    Live<i class="bx bx-right-arrow-alt"></i>
+                  </a>
+                  <a href="" class="projects__elem-link2" target="_blank">
+                    Github<i class="bx bx-right-arrow-alt"></i>
+                  </a>
                 </div>
+              </div>
+            </template>
+          </div>
+        </section>
 
-            </section>
+        <section class="contact section" id="contact">
+          <!-- <img src="assets/img/contactPic.svg" alt="" class="contact__image"> -->
 
-            <section class="skills section" id="skills">
+          <div class="contact__title">
+            <h2 class="section__title">Contact</h2>
+            <hr class="section__titleSeparator" />
+            <h3 class="section__titleSecond">Get in touch</h3>
+          </div>
 
+          <form
+            action="https://formsubmit.co/bartek016790@gmail.com"
+            method="POST"
+            class="contact__form"
+          >
+            <input class="thanksPage" type="hidden" name="_next" value="" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your name"
+              required
+            />
+            <label for="name" class="contact__warning">
+              <i class='bx bxs-info-square'></i> This field is required.
+            </label>
+            <br />
+            <br />
+            <input
+              class="contact__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              required
+            />
+            <label for="email" class="contact__warning">
+              <i class='bx bxs-info-square'></i> This field is required.
+            </label>
+            <br />
+            <br />
+            <input
+              class="contact__input"
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="Subject"
+              required
+            />
+            <label for="subject" class="contact__warning">
+              <i class='bx bxs-info-square'></i> This field is required.
+            </label>
+            <br />
+            <br />
+            <textarea
+              class="contact__input contact__input-mess"
+              type="text"
+              name="message"
+              id="message"
+              size="50"
+              placeholder="Message..."
+              required
+            ></textarea>
+            <label for="message" class="contact__warning">
+              <i class='bx bxs-info-square'></i> This field is required.
+            </label>
+            <br />
+            <br />
+            <input type="submit" value="Send" id="submit-btn" class="cta-button" />
+          </form>
+        </section>
+      </main>
 
-                <div class="skills__bgComponent" data-aos="fade-down" data-aos-duration="1000">
-                </div>
-
-                <div class="skills__componentTitle container" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 class="section__title skills__titleColor">Skills</h2>
-                    <hr class="section__titleSeparator skills__hrColor">
-                    <h3 class="section__titleSecond skills__titleColor">Tehnologies</h3>
-                </div>
-
-                <div class="skills__technologies" data-aos="fade-up" data-aos-duration="1000">
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/html5.svg" alt="">
-                        <p class="skills__text">HTML5</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/css3.svg" alt="">
-                        <p class="skills__text">CSS3</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/javascript.svg" alt="">
-                        <p class="skills__text">JavaScript</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/bootstrap.svg" alt="">
-                        <p class="skills__text">Bootstrap</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/sass.svg" alt="">
-                        <p class="skills__text">Sass/Scss</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/git.svg" alt="">
-                        <p class="skills__text">Git / Github</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/vscode.svg" alt="">
-                        <p class="skills__text">VScode</p>
-                    </div>
-
-                    <div class="skills__technologies-item">
-                        <img src="assets/img/technologiesIcons/figma.svg" alt="">
-                        <p class="skills__text">Figma</p>
-                    </div>
-
-                </div>
-
-
-            </section>
-
-            <section class="projects section higher-section" id="projects" data-aos="fade-up" data-aos-duration="1000">
-
-                <div class="projects__title">
-                    <h2 class="section__title">Projects</h2>
-                    <hr class="section__titleSeparator">
-                    <h3 class="section__titleSecond">My work</h3>
-                </div>
-
-                <div class="projects__box">
-
-                    <img src="assets/img/warningPic.svg" alt="WARNING!" class="projects__warningIMG">
-                    <p class="projects__warning"></p>
-
-    
-                    <template class="projects__elem"> 
-                        <div class="projects__elem-item" id="projects">
-                            <img class="projects__elem-image" src="assets/img/projects-pic/protfolio-prct.png" alt="">
-                            <h3 class="projects__elem-title"></h3>
-                            <div class="projects__elem-links">
-                                <a href="" class="projects__elem-link1" target="_blank">
-                                    Live<i class='bx bx-right-arrow-alt'></i>
-                                </a>
-                                <a href="" class="projects__elem-link2" target="_blank">
-                                    Github<i class='bx bx-right-arrow-alt'></i>
-                                </a>
-                            </div>
-                        </div>
-                    </template>
-                    
-
-                </div>
-
-            </section>
-
-            <section class="contact section" id="contact">
-                <!-- <img src="assets/img/contactPic.svg" alt="" class="contact__image"> -->
-
-                <div class="contact__title">
-                    <h2 class="section__title">Contact</h2>
-                    <hr class="section__titleSeparator">
-                    <h3 class="section__titleSecond">Get in touch</h3>
-                </div>
-
-
-                <form action="https://formsubmit.co/bartek016790@gmail.com" method="POST" class="contact__form">
-                    <input class="thanksPage" type="hidden" name="_next" value="">
-                    <input type="hidden" name="_captcha" value="false">
-                    <input class="contact__input" type="text" name="name" placeholder="Your name" required>
-                    <br>
-                    <br>
-                    <input class="contact__input" type="email" name="email" placeholder="Your email" required>
-                    <br>
-                    <br>
-                    <input class="contact__input" type="text" name="subject" placeholder="Subject" required>
-                    <br>
-                    <br>
-                    <textarea class="contact__input contact__input-mess" type="text" name="message" size="50" placeholder="Message..." required></textarea>
-                    <br>
-                    <br>
-                    <input type="submit" value="Send" class="cta-button">
-                </form>
-
-            </section>
-        </main>
-
-        <footer class="footer">
-            <p class="footer__textOne">Designed and created by Bartosz Solga</p>
-            <p class="footer__textTwo">Copyright © <span class="footer__year"></span></p>
-        </footer>
-
+      <footer class="footer">
+        <p class="footer__textOne">Designed and created by Bartosz Solga</p>
+        <p class="footer__textTwo">
+          Copyright © <span class="footer__year"></span>
+        </p>
+      </footer>
     </div>
-
 
     <!-- ==== External JavaScript files ==== -->
 
@@ -293,10 +438,10 @@
 
     <!-- initialized AOS -->
     <script>
-        AOS.init();
+      AOS.init();
     </script>
 
     <!-- MAIN JS FILE -->
     <script src="assets/js/main.js"></script>
-</body>
+  </body>
 </html>
