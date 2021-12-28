@@ -8,8 +8,8 @@
         },
         {
             "name": "pro-paper",
-            "live": "https://barsolga.github.io/PRO-PAPER_website/",
-            "github": "https://github.com/barSolga/PRO-PAPER_website",
+            "live": "https://pro-paper.pl",
+            "github": "https://github.com/barSolga/pro-paper-node",
             "image": "assets/img/projects-pic/propaper-prct.png"
         }
     ]
