@@ -872,7 +872,6 @@ input:checked + .slider:before {
 
 .projects__elem-item {
   max-width: 300px;
-  height: 180px;
   margin: 2em 0;
   background: linear-gradient(126.86deg, var(--first-color) -2.07%, var(--first-color-light) 106.17%);
   -webkit-box-shadow: -5px -5px 20px rgba(0, 0, 0, 0.4);
@@ -884,6 +883,10 @@ input:checked + .slider:before {
   transition: -webkit-box-shadow .3s;
   transition: box-shadow .3s;
   transition: box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.projects__elem-image {
+  height: 200px;
 }
 
 .projects__elem-links {
